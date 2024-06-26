@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/coffe-website/static/css/main.88b774a7.css",
+    "main.js": "/coffe-website/static/js/main.3540ab55.js",
+    "static/js/453.8e4c5fdf.chunk.js": "/coffe-website/static/js/453.8e4c5fdf.chunk.js",
+    "static/media/heroimage.png": "/coffe-website/static/media/heroimage.fe3ce3d1e9b13a68f258.png",
+    "index.html": "/coffe-website/index.html",
+    "main.88b774a7.css.map": "/coffe-website/static/css/main.88b774a7.css.map",
+    "main.3540ab55.js.map": "/coffe-website/static/js/main.3540ab55.js.map",
+    "453.8e4c5fdf.chunk.js.map": "/coffe-website/static/js/453.8e4c5fdf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.88b774a7.css",
+    "static/js/main.3540ab55.js"
+  ]
+}
