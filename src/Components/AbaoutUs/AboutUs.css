@@ -1,0 +1,160 @@
+/* src/components/AboutUs.css */
+.about-us {
+    padding: 50px 20px;
+    background-color: #fdfaf6;
+    color: #5a5a5a;
+  }
+  
+  .about-us h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #8c6046;
+  }
+  
+  .owner-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .owner-section:not(:last-child) {
+    margin-bottom: 50px;
+  }
+  
+  .owner-photo {
+    flex: 1 1 200px;
+    max-width: 200px;
+    margin-right: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .owner-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .owner-details {
+    flex: 2 1 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .owner-name {
+    font-size: 2rem;
+    color: #8c6046;
+    margin-bottom: 10px;
+  }
+  
+  .owner-contact,
+  .owner-education,
+  .owner-interests,
+  .owner-experience,
+  .owner-description {
+    margin-bottom: 20px;
+  }
+  
+  .owner-contact h3,
+  .owner-education h3,
+  .owner-interests h3,
+  .owner-experience h3,
+  .owner-description h3 {
+    font-size: 1.2rem;
+    color: #8c6046;
+    margin-bottom: 10px;
+  }
+  
+  .owner-contact p,
+  .owner-education ul,
+  .owner-interests ul,
+  .owner-experience ul,
+  .owner-description p {
+    margin: 0;
+  }
+  
+  .owner-contact ul,
+  .owner-education ul,
+  .owner-interests ul,
+  .owner-experience ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .owner-contact li,
+  .owner-education li,
+  .owner-interests li,
+  .owner-experience li {
+    margin-bottom: 5px;
+  }
+  
+  .owner-interests .interest-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .owner-interests .interest-bar span {
+    flex: 1;
+    height: 8px;
+    background: #ddd;
+    margin-left: 10px;
+    border-radius: 4px;
+  }
+  
+  .owner-interests .interest-bar span.level {
+    background: #8c6046;
+  }
+  
+  @media (max-width: 768px) {
+    .owner-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .owner-photo {
+      margin-right: 0;
+      margin-bottom: 20px;
+      max-width: 100%;
+    }
+  
+    .owner-details {
+      align-items: center;
+    }
+  
+    .owner-details > * {
+      text-align: center;
+    }
+  
+    .owner-name {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .owner-section {
+      padding: 15px;
+    }
+  
+    .owner-name {
+      font-size: 1.5rem;
+    }
+  
+    .owner-contact h3,
+    .owner-education h3,
+    .owner-interests h3,
+    .owner-experience h3,
+    .owner-description h3 {
+      font-size: 1rem;
+    }
+  }
+  

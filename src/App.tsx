@@ -1,25 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import Header from './Components/Header';
+import HeroSection from './Components/HeroSection/HeroSection';
+import OffersSection from './Components/OffersSection/OffersSection';
+import Footer from './Components/Footer';
+import MenuSection from './Components/MenuSection/MenuSection';
+import DetailedMenuSection from './Components/DetailedMenuSection/DetailedMenuSection';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import ContactUs from './Components/ContactUs/ContactUs';
+import AboutUs from './Components/AbaoutUs/AboutUs';
 function App() {
   return (
+    <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className="main-content">
+        <Routes>
+          <Route path="/" element={
+            <>
+              <HeroSection />
+              <OffersSection />
+              <MenuSection />
+              <DetailedMenuSection />
+            </>
+          } />
+          <Route path="/contact" element={<ContactUs />} />
+          <Route path='aboutsus' element={<AboutUs/>}/>
+        </Routes>
+      </div>
+      <Footer />
     </div>
+  </Router>
   );
 }
 
